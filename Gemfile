@@ -65,5 +65,5 @@ end
 gem "dotenv-rails"
 gem "sidekiq"
 gem "sidekiq-scheduler"
-gem 'redis', '~> 4.0'
+gem 'redis', '~> 5.3'
 
