@@ -1,0 +1,11 @@
+:concurrency: 5
+:queues:
+  - default
+  - mailers
+:redis:
+  url: "rediss://:ATMfAAIjcDE1OTRjYzIxZTQyNWY0YzEyYjA2YjU3MDU5MGJmZjJhNnAxMA@noble-shrimp-13087.upstash.io:6379"
+:scheduler:
+  :schedule:
+    send_weekly_report_job:
+      cron: "0 9 * * 1"
+      class: SendWeeklyReportJob
